@@ -1,0 +1,55 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Body
+$header-footer-bg: #f8fafc;
+$content-bg: #e0ecf5;
+$sideNav-bg: #094b75;
+
+// Typography
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-family-sans-serif-roboto: 'Roboto', sans-serif;
+$font-size-base: 1.0em;
+$line-height-base: 1.6em;
+$font-size-resp: 0.75em;
+
+// Width
+$sideNav-width: 7em;
+$responsive-sideNav-witdh: 4.5em;
+
+// Padding
+//$padding-for-header: 1.5em 0em 0.0em $sideNav-width;
+$padding-for-header: 0.25em 0em 0.0em $sideNav-width;
+$padding-for-main: 0.0em 0.0em 0.0em $sideNav-width;
+$padding-for-footer: 0.75em 0em 0.75em $sideNav-width;
+$padding: 2em;
+//$responsive-padding-for-header: 1.5em 0em 0.0em $responsive-sideNav-witdh;
+$responsive-padding-for-header: 0.25em 0em 0.0em $responsive-sideNav-witdh;
+$responsive-padding-for-main: 0.0em 0em 0.0em $responsive-sideNav-witdh;
+$responsive-padding-for-footer: 0.75em 0em 0.75em $responsive-sideNav-witdh;
+$responsive-padding: 1em;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #237a2f;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$grey-color: #4d4d4d;
+$white-color: #ffffff;
+$black-color: #222222;
+
+// Gradient color
+$color-from: #4ba614;
+$color-to: #008c00;
+
+//functions
+@mixin set-color($color) {
+    background-color: $color;
+}

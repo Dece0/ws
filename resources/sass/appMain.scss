@@ -1,0 +1,168 @@
+.body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "content"
+        "footer";
+    //grid-template-rows: 4em 1fr 2.5em;
+    grid-template-rows: 2.75em 1fr 2.5em;
+    font-family: $font-family-sans-serif-roboto;
+    transition: 0.05s;
+
+    .header {
+        grid-area: header;
+        padding: $padding-for-header;
+        background-color:  $header-footer-bg;
+        color: $black-color;
+        text-align: center;
+        transition: 0.05s;
+    }
+
+    .main {
+        grid-area: content;
+        background-color: $content-bg;
+        color: $white-color;
+        padding: $padding-for-main;
+        text-align: center;
+
+        //*********************************
+        //********** index blade **********
+        //*********************************
+
+        .index {
+            padding-top: 1.0em;
+        }
+
+        //***************************************
+        //********** temperature blade **********
+        //***************************************
+
+        .temperature {
+            padding-top: 1.0em;
+        }
+
+        //***************************************
+        //**********humidity blade **************
+        //***************************************
+
+        .humidity {
+            padding-top: 1.0em;
+        }
+
+        //***************************************
+        //**********pressure blade **************
+        //***************************************
+
+        .pressure {
+            padding-top: 1.0em;
+        } 
+
+        .settings {
+            padding: 1em;
+        }
+    }
+
+    .footer {
+        grid-area: footer;
+        padding: $padding-for-footer;
+        text-align: center;
+        background-color: $header-footer-bg;
+        color: $black-color;
+        font-size: $font-size-base;
+    }
+}
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .body {
+
+        .header {
+            grid-area: header;
+            padding: $responsive-padding-for-header;
+            text-align: center;
+        }
+
+        .main {
+            grid-area: content;
+            background-color: $content-bg;
+            color: $white-color;
+            padding: $responsive-padding-for-main;
+            text-align: center;
+    
+            .index {
+                padding: $responsive-padding;
+            }
+        }
+
+        .footer {
+            grid-area: footer;
+            padding: $responsive-padding-for-footer;
+            text-align: center;
+            font-size: $font-size-resp;
+        }
+    }
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .body {
+
+        .header {
+            grid-area: header;
+            padding: $responsive-padding-for-header;
+            text-align: center;
+        }
+
+        .main {
+            grid-area: content;
+            background-color: $content-bg;
+            color: $white-color;
+            padding: $responsive-padding-for-main;
+            text-align: center;
+    
+            .index {
+                padding: $responsive-padding;
+            }
+
+            .settings {
+                padding: 0.75em;
+            }
+        }
+
+        .footer {
+            grid-area: footer;
+            padding: $responsive-padding-for-footer;
+            text-align: center;
+            font-size: $font-size-resp;
+        }
+    }
+}

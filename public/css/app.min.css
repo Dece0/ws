@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext);@import url(https://fonts.googleapis.com/css?family=Nunito);.body {
+  display: grid;
+  grid-template-areas: "header" "content" "footer";
+  grid-template-rows: 2.75em 1fr 2.5em;
+  font-family: "Roboto", sans-serif;
+  transition: 0.05s;
+}
+
+.body .header {
+  grid-area: header;
+  padding: 0.25em 0em 0em 7em;
+  background-color: #f8fafc;
+  color: #222222;
+  text-align: center;
+  transition: 0.05s;
+}
+
+.body .main {
+  grid-area: content;
+  background-color: #e0ecf5;
+  color: #ffffff;
+  padding: 0em 0em 0em 7em;
+  text-align: center;
+}
+
+.body .main .index {
+  padding-top: 1em;
+}
+
+.body .main .temperature {
+  padding-top: 1em;
+}
+
+.body .main .humidity {
+  padding-top: 1em;
+}
+
+.body .main .pressure {
+  padding-top: 1em;
+}
+
+.body .main .settings {
+  padding: 1em;
+}
+
+.body .footer {
+  grid-area: footer;
+  padding: 0.75em 0em 0.75em 7em;
+  text-align: center;
+  background-color: #f8fafc;
+  color: #222222;
+  font-size: 1em;
+}
+
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .body .header {
+    grid-area: header;
+    padding: 0.25em 0em 0em 4.5em;
+    text-align: center;
+  }
+
+  .body .main {
+    grid-area: content;
+    background-color: #e0ecf5;
+    color: #ffffff;
+    padding: 0em 0em 0em 4.5em;
+    text-align: center;
+  }
+
+  .body .main .index {
+    padding: 1em;
+  }
+
+  .body .footer {
+    grid-area: footer;
+    padding: 0.75em 0em 0.75em 4.5em;
+    text-align: center;
+    font-size: 0.75em;
+  }
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .body .header {
+    grid-area: header;
+    padding: 0.25em 0em 0em 4.5em;
+    text-align: center;
+  }
+
+  .body .main {
+    grid-area: content;
+    background-color: #e0ecf5;
+    color: #ffffff;
+    padding: 0em 0em 0em 4.5em;
+    text-align: center;
+  }
+
+  .body .main .index {
+    padding: 1em;
+  }
+
+  .body .main .settings {
+    padding: 0.75em;
+  }
+
+  .body .footer {
+    grid-area: footer;
+    padding: 0.75em 0em 0.75em 4.5em;
+    text-align: center;
+    font-size: 0.75em;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  color: red;
+}
+
+[v-cloak] {
+  display: none;
+}
+

@@ -1,0 +1,19 @@
+// Variables
+@import 'variables';
+
+// Others pages
+@import 'appMain';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    color: rgb(255, 0, 0);
+}
+
+[v-cloak] {
+    display: none;
+}
